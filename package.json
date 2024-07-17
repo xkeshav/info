@@ -6,7 +6,7 @@
   "description": "This is a personal repository.",
   "publisher": "@xkeshav",
   "homepage": "https://github.com/xkeshav/info/blob/main/README.md",
-  "license": "SEE LICENSE IN LICENSE",
+  "license": "MIT",
   "type": "module",
   "bugs": {
     "url": "https://github.com/xkeshav/info/issues",
