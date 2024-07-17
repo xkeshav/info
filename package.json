@@ -1,7 +1,7 @@
 {
   "name": "xkeshav",
-  "version": "0.0.2",
-  "private": false,
+  "version": "1.0.0",
+  "private": true,
   "displayName": "npm package to to display personal detail",
   "description": "This is a personal repository.",
   "publisher": "@xkeshav",
@@ -30,7 +30,11 @@
   "bin": {
     "xkeshav": "src/index.js"
   },
-  "scripts": {},
+  "scripts": {
+  },
+  "files": [
+    "**/*.js"
+  ],
   "dependencies": {
     "boxen": "^8.0.0"
   },
