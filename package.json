@@ -1,9 +1,9 @@
 {
   "name": "xkeshav",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": false,
-  "displayName": "CLI tool to display details",
-  "description": "This is a info repository.",
+  "displayName": "npm package to to display personal detail",
+  "description": "This is a personal repository.",
   "publisher": "@xkeshav",
   "homepage": "https://github.com/xkeshav/info/blob/main/README.md",
   "license": "SEE LICENSE IN LICENSE",
@@ -19,14 +19,13 @@
   "keywords": [
     "xkeshav",
     "CLI",
-    "github",
+    "npm",
     "tool"
   ],
   "author": {
     "name": "Keshav Mohta",
     "email": "xkeshav@gmail.com"
   },
-  "contributors": [],
   "main": "src/index.js",
   "bin": {
     "xkeshav": "src/index.js"

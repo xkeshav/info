@@ -17,7 +17,7 @@ const intro = chalk.bold(
 
 const links = [
   {
-    name: chalk.white.bgGreen("• Website 🌐 "),
+    name: chalk.black.bgGreen("• Website 🌐 "),
     url: "https://xkeshav.com",
   },
   {
@@ -25,7 +25,7 @@ const links = [
     url: "https://github.com/xkeshav",
   },
   {
-    name: chalk.white.bgHex("#1153be")("• Linkedin  🔗 "),
+    name: chalk.yellowBright.bgHex("#1153be")("• Linkedin 🔗 "),
     url: "https://linkedin.com/in/xkeshav",
   },
   {
@@ -34,7 +34,7 @@ const links = [
   },
 ];
 
-const linkMap = links.map(({name, url}) => `${name}  ⇢  ${url}`).join("\n\n");
+const linkMap = links.map(({name, url}) => `${name}  ⇢  ${chalk.italic(url)}`).join("\n\n");
 
 const linkList = "\n\nFind me on the internet:\n\n" + linkMap;
 
