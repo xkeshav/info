@@ -1,20 +1,9 @@
-# Template Repository
+# Info
 
-This is project repository
+This is project repository a cli tool to display my details
 
-## How to start
-
-- Navigate to the repo from terminal
-- Install dependencies using below command
+## How to run
 
 ```sh
-> npm install
+npx xkeshav
 ```
-
-- After successful completion of above command, run
-
-```sh
-> npm run start
-```
-
-This command will output on which address, project is running; open that in browser

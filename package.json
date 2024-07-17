@@ -1,25 +1,26 @@
 {
-  "name": "@xkeshav/<project>",
+  "name": "xkeshav",
   "version": "0.0.1",
   "private": false,
-  "displayName": "Project Name",
-  "description": "This is a <project> repository.",
+  "displayName": "CLI tool to display details",
+  "description": "This is a info repository.",
   "publisher": "@xkeshav",
-  "homepage": "https://github.com/xkeshav/<project>/blob/main/README.md",
+  "homepage": "https://github.com/xkeshav/info/blob/main/README.md",
   "license": "SEE LICENSE IN LICENSE",
+  "type": "module",
   "bugs": {
-    "url": "https://github.com/xkeshav/<project>/issues",
+    "url": "https://github.com/xkeshav/info/issues",
     "email": "xkeshav@gmail.com"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/xkeshav/<project>.git"
+    "url": "https://github.com/xkeshav/info.git"
   },
   "keywords": [
-    "xkeshav", 
-    "parixan",
+    "xkeshav",
+    "CLI",
     "github",
-    "template"
+    "tool"
   ],
   "author": {
     "name": "Keshav Mohta",
@@ -27,16 +28,13 @@
   },
   "contributors": [],
   "main": "src/index.js",
-  "scripts": {
-    "start": "tsc"
+  "bin": {
+    "xkeshav": "src/index.js"
   },
-  "dependencies": { 
-    "@xkeshav/day": "latest"
+  "scripts": {},
+  "dependencies": {
+    "boxen": "^8.0.0"
   },
-  "devDependencies":{ 
-      "typescript": "latest"
-  },
-  "peerDependencies": { },
   "browserslist": {
     "production": [
       ">0.2%",
