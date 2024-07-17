@@ -1,7 +1,7 @@
 {
   "name": "xkeshav",
   "version": "1.0.0",
-  "private": true,
+  "private": false,
   "displayName": "npm package to to display personal detail",
   "description": "This is a personal repository.",
   "publisher": "@xkeshav",
