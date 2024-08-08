@@ -1,23 +1,43 @@
 #!/usr/bin/env node
-import boxen from "boxen";
 import chalk from "chalk";
 
-const boxenOptions = {
-  padding: 1,
-  width: 80,
-  title: "@xkeshav",
-  titleAlignment: "center",
-  borderStyle: "round",
-  borderColor: "#649ed2",
+const boxLines = {
+  topLeft: "┌",
+  topRight: "┐",
+  bottomRight: "┘",
+  bottomLeft: "└",
+  side: "│",
+};
+const emptySpace = " ";
+const newLine = "\n";
+
+const boxConsole = (messages = []) => {
+  const tips = [emptySpace, ...messages].map((msg) => ({
+    text: msg,
+    len: msg.length,
+  }));
+  let line = chalk.yellow("─".repeat(80));
+  let result = [
+    newLine,
+    chalk.yellow(boxLines.topLeft) + line + chalk.yellow(boxLines.topRight),
+  ];
+  tips.forEach((msg) => {
+    const str = emptySpace + msg.text + `${msg.len === 1 ? "\t" + emptySpace : newLine}` + emptySpace;
+    result.push(str);
+  });
+  result.push(
+    chalk.yellow(boxLines.bottomLeft) + line + chalk.yellow(boxLines.bottomRight) + newLine,
+  );
+  return result.join(newLine);
 };
 
 const intro = chalk.bold(
-  "Hi, Keshav Mohta here 👋\n\nI'm a web developer from India.\n"
+  "\t\t👋 Hi, Keshav Mohta here. I'm a web developer from India.",
 );
 
 const links = [
   {
-    name: chalk.black.bgGreen("• Website 🌐 "),
+    name: chalk.black.bgGreen("• Website 🕸 "),
     url: "https://xkeshav.com",
   },
   {
@@ -34,8 +54,10 @@ const links = [
   },
 ];
 
-const linkMap = links.map(({name, url}) => `${name}  ⇢  ${chalk.italic(url)}`).join("\n\n");
+const linkMap = links
+  .map(({ name, url }) => `\t\t ${name} ->  ${chalk.italic(url)}`)
+  .join("\n\n");
 
-const linkList = "\n\nFind me on the internet:\n\n" + linkMap;
+const linkList = "\t\tFind me on the internet:";
 
-console.log(boxen(intro + linkList, boxenOptions));
+console.log(boxConsole([intro, linkList, linkMap]));

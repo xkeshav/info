@@ -1,6 +1,6 @@
 {
   "name": "xkeshav",
-  "version": "1.0.0",
+  "version": "1.1.2",
   "private": false,
   "displayName": "npm package to to display personal detail",
   "description": "This is a personal repository.",
@@ -31,13 +31,12 @@
     "xkeshav": "src/index.js"
   },
   "scripts": {
+    "start": "node src/index.js",
+    "version": "npm publish --access=public"
   },
   "files": [
     "**/*.js"
   ],
-  "dependencies": {
-    "boxen": "^8.0.0"
-  },
   "browserslist": {
     "production": [
       ">0.2%",
@@ -49,5 +48,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "dependencies": {
+    "chalk": "5.3.0"
   }
 }

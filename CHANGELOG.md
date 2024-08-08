@@ -9,3 +9,7 @@ All notable changes to this repository will be documented in this file.
 ## [0.0.2]
 
 - change link to italic
+
+## [1.1.0]
+
+- remove dependencies and using chalk only
