@@ -31,8 +31,8 @@ const boxConsole = (messages = []) => {
   return result.join(newLine);
 };
 
-const intro = chalk.bold(
-  "\t\t👋 Hi, Keshav Mohta here. I'm a web developer from India.",
+const intro = chalk(
+  "\t\t👋 Hi, " + chalk.redBright.bold("Keshav Mohta") + " here. I'm a web developer from India.",
 );
 
 const links = [
@@ -41,7 +41,7 @@ const links = [
     url: "https://xkeshav.com",
   },
   {
-    name: chalk.white.bgMagenta("• GitHub 💻 "),
+    name: chalk.white.bgMagenta("• GitHub 📚 "),
     url: "https://github.com/xkeshav",
   },
   {
@@ -55,9 +55,11 @@ const links = [
 ];
 
 const linkMap = links
-  .map(({ name, url }) => `\t\t ${name} ->  ${chalk.italic(url)}`)
+  .map(({ name, url }) => `\t\t ${name} ->  ${chalk.blue.underline.italic(url)}`)
   .join("\n\n");
 
 const linkList = "\t\tFind me on the internet:";
 
-console.log(boxConsole([intro, linkList, linkMap]));
+const output = boxConsole([intro, linkList, linkMap]);
+
+console.log(output);

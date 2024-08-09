@@ -13,3 +13,11 @@ All notable changes to this repository will be documented in this file.
 ## [1.1.0]
 
 - remove dependencies and using chalk only
+
+## [1.1.2]
+
+- convert code into one file
+
+## [1.1.3]
+
+- change icon and text
